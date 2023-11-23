@@ -41,8 +41,7 @@ class Board {
             ghostVal = 
                   {
                         make_pair(1, 10), 
-                        make_pair(1, 5),
-                        make_pair(4, 14)
+                        make_pair(10, 14)
                   };
             dis.assign(n*m, vector<int>(n*m, inf));
             floydWarshell();
@@ -256,6 +255,6 @@ void runMinMax(int maxDepth) {
 }
 
 signed main() {
-      int maxDepth = 7;
+      int maxDepth = 8;
       runMinMax(maxDepth);
 }
